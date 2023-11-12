@@ -1,0 +1,166 @@
+.Project_detail_show_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    
+}
+.Project_detail_div{
+    display: flex;
+    flex-direction: row;
+    justify-content:top;
+    align-items: center;
+    gap: 110px;
+}
+.Project_detail_img{
+    width: 400px;
+    height: 400px;
+}
+.Project_detail_info{
+    display: flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items: left;
+
+}
+.Project_detail_name{
+    font-size: 30px;
+    color: aliceblue;
+    border-bottom: 1px solid white;
+}
+.Project_detail_intro{
+    font-size: 20px;
+    color: aliceblue;
+    max-width: 400px;
+}
+.Project_detail_btn_div{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: left;
+    gap: 20px;
+}
+.Project_detail_btn_div a{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0);
+}
+.Project_detail_btn_div .link{
+    text-decoration: none;
+    color: rgb(49, 159, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0);
+}
+
+.Project_detail_btn_div a:hover{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0.232);
+}
+.Project_detail_btn_div .link:hover{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0.238);
+
+}
+
+@media (max-width:600px) {
+    .Project_detail_show_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 85%;
+        background-color: rgb(41, 41, 41);
+        overflow: hidden;
+        overflow-y: scroll;
+        
+    }
+    .Project_detail_show_div::-webkit-scrollbar{
+        width: 6px;
+    }
+    .Project_detail_show_div::-webkit-scrollbar-thumb{
+        background-color: rgb(15, 15, 15);
+        border-radius: 30px;
+    }
+    .Project_detail_show_div::-webkit-scrollbar-track{
+        background-color: rgb(54, 54, 54);
+        border-radius: 30px;
+    }
+    .Project_detail_div{
+        display: flex;
+        flex-direction: column;
+        justify-content:top;
+        align-items: center;
+        gap: 10px;
+    }
+    .Project_detail_img{
+        width: 200px;
+        height: 200px;
+    }
+    .Project_detail_info{
+        display: flex;
+        flex-direction: column;
+        justify-content:top;
+        align-items: left;
+    
+    }
+    .Project_detail_name{
+        font-size: 30px;
+        color: aliceblue;
+        border-bottom: 1px solid white;
+    }
+    .Project_detail_intro{
+        font-size: 20px;
+        color: aliceblue;
+        max-width: 400px;
+    }
+    .Project_detail_btn_div{
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: left;
+        gap: 20px;
+    }
+    .Project_detail_btn_div a{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0);
+    }
+    .Project_detail_btn_div .link{
+        text-decoration: none;
+        color: rgb(49, 159, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0);
+    }
+    
+    .Project_detail_btn_div a:hover{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0.232);
+    }
+    .Project_detail_btn_div .link:hover{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0.238);
+    
+    }
+}

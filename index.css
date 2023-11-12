@@ -1,0 +1,704 @@
+body{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+@keyframes start {
+    0%{opacity: 0.6;}
+    100%{opacity: 1;}
+}
+.Home_main_div{
+    width: 100%;
+    height: 100vh;
+    animation-name: start;
+    animation-duration: 1s;
+    background: no-repeat center 30% ;
+    background-image:url('https://mochizuki-ken.github.io/bg.jpg');
+    background-size: cover ;
+    
+    
+}
+.Home_title_div{
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.Home_title_div .name{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Home_title_div .disc{
+    font-size: 25px;
+    font-weight: 300;
+}
+.Home_links_div{
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5px;
+    
+}
+.Home_links_div .link{
+    font-size: 25px;
+    text-decoration: none;
+    color: azure;
+    border-color: rgb(32, 32, 32);
+    transition: 0.2s;
+    border-bottom: 0px solid rgb(32, 32, 32);
+    border-right: 0px solid rgb(32, 32, 32);
+    border-width: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    padding:0 10px;
+
+}
+
+.Home_links_div .link:hover{
+    
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+@media (max-width:600px) {
+    .Home_main_div{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        animation-name: start;
+        animation-duration: 1s;
+        
+        
+    }
+    .Home_title_div{
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid black;
+        width: 220px;
+    }
+    .Home_title_div .name{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .Home_title_div .disc{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .Home_links_div{
+        position: absolute;
+        left: 50%;
+        top: 52%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 20px;
+        
+    }
+    .Home_links_div .link{
+        font-size: 25px;
+        text-decoration: none;
+        color: azure;
+        border-color: rgb(32, 32, 32);
+        transition: 0.2s;
+        border-bottom: 0px solid rgb(32, 32, 32);
+        border-right: 0px solid rgb(32, 32, 32);
+        border-width: 0%;
+        background-color: rgba(0, 0, 0, 0);
+
+    
+    }
+    
+    .Home_links_div .link:hover{
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+}
+
+@media (min-width:1600px){
+    .Home_main_div{
+        width: 100%;
+        height: 100vh;
+        background: no-repeat center 35% ;
+        background-image:url('https://mochizuki-ken.github.io/bg.jpg');
+        background-size: cover ;
+        animation-name: start;
+        animation-duration: 1s;
+        
+        
+    }
+    .Home_title_div{
+        
+        top: 37%;
+        
+    }
+    .Home_links_div{
+        
+        top: 52%;
+        
+    }
+}
+@keyframes start2 {
+    0%{opacity: 0.9;}
+    100%{opacity: 1;}
+}
+.Projects_main_div{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: row;
+    animation-name: start2;
+    animation-duration: 1s;
+}
+.Projects_navbar_div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items: center;
+}
+.Projects_show_div{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Oswald', sans-serif;
+}
+.Projects_show_div .empty{
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    right: 40%;
+    font-size: x-large;
+}
+.Projects_show_div::-webkit-scrollbar{
+    width: 6px;
+}
+.Projects_show_div::-webkit-scrollbar-thumb{
+    background-color: rgb(15, 15, 15);
+    border-radius: 30px;
+}
+.Projects_show_div::-webkit-scrollbar-track{
+    background-color: rgb(54, 54, 54);
+    border-radius: 30px;
+}
+.Projects_navbar_title_div{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 20px;
+}
+.Projects_navbar_title{
+    font-size: 30px;
+    color: aliceblue;
+}
+.Projects_navbar_link_div{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+.Projects_navbar_link_div .link{
+    background-color: rgb(47, 47, 47);
+    color: aliceblue;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content:left ;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+
+    transition: 0.3s;
+    padding-left: 15px;
+    margin-left: 20px;
+    
+}
+.Projects_navbar_link_div .link:hover{
+    background-color: rgb(47, 47, 47);
+    color: rgb(61, 178, 232);
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content:left ;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+
+    transition: 0.3s;
+    padding-left: 60px;
+    
+}
+.Projects_navbar_search_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+    width: 90%;
+}
+.Projects_navbar_search_div input{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.027);
+    border: 1px solid black;
+    color: aliceblue;
+    font-size: 15px;
+    width: 90%;
+    margin-right: 2px;
+    padding: 5px;
+
+}
+.Projects_navbar_search_div button{
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid black;
+    font-size: 15px;
+    color: aliceblue;
+    width: 90%;
+    padding: 10px 5px;
+}
+
+/*Mobile*/
+@media (max-width:600px) {
+    .Projects_main_div{
+        display: flex;
+        flex-direction: column;
+    }
+    .Projects_navbar_div{
+        width: 97%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 0;
+    }
+    .Projects_show_div{
+        width: 100%;
+        height: 80%;
+        
+    }
+    .Projects_show_div .empty{
+        color: aliceblue;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%);
+        font-size: x-large;
+    }
+    .Projects_navbar_title_div{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        /* border-bottom: 1px solid black; */
+        border: 0;
+    }
+    .Projects_navbar_title{
+        font-size: 25px;
+        color: aliceblue;
+    }
+    .Projects_navbar_link_div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 1px;
+    }
+    .Projects_navbar_link_div .link{
+        width: 80%;
+        height: 33%;
+        font-size: 20px;
+        
+    }
+    .Projects_navbar_link_div .link:hover{
+        background-color: rgb(47, 47, 47);
+        color: aliceblue;
+        width: 80%;
+        height: 33%;
+        display: flex;
+        justify-content:left ;
+        align-items: center;
+        text-decoration: none;
+        font-size: 25px;
+    
+        transition: 0.3s;
+        padding-left: 25px;
+        color: rgb(61, 178, 232);
+        
+    }
+    .Projects_navbar_search_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        
+        /* gap: 5px; */
+    }
+    .Projects_navbar_search_div input{
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.027);
+        border: 1px solid black;
+        color: aliceblue;
+        font-size: 15px;
+        width: 85%;
+        /* border: 0; */
+        /* margin-right: 5px; */
+    }
+    .Projects_navbar_search_div button{
+        border-radius: 20px;
+        background-color: rgb(40, 40, 40);
+        border: 1px solid black;
+        font-size: 15px;
+        color: aliceblue;
+        width: 90%;
+        padding: 5px 10px;
+        /* border: 0; */
+    }
+}
+/*Ipad*/
+@media (max-width:1200px  ){
+    .Projects_navbar_title_div{
+        height: 20%;
+    }
+    .Projects_navbar_title{
+        font-size: 25px;
+    }
+}
+/*Computer*/
+@media (min-width:1200px){
+    .Projects_navbar_title_div{
+        height: 15%;
+    }
+}
+.card_main_div{
+    width: 350px;
+    height: 300px;
+    background-size: 350px 300px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 15px;
+    border-radius: 10px;
+}
+.card_info_div{
+    background-color: rgba(26, 26, 26, 0.897);
+    transition: 0.4s;
+    width: 100%;
+    height: 30%;
+    padding-left: 40px;
+    padding-top: 10px;
+    opacity: 1;
+}
+.card_info_div:hover{
+    background-color: rgba(26, 26, 26, 0.968);
+    transition: 0.4s;
+    width: 100%;
+    height: 40%;
+    padding-left: 40px;
+    padding-top: 10px;
+    opacity: 1;
+}
+.card_info_div label{
+    font-size: 25px;
+    margin: 0;
+    color: rgb(202, 202, 202);
+}
+.card_info_div p{
+    font-size: 15px;
+    margin: 0;
+    color: rgb(202, 202, 202);
+}
+.card_button_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+.card_button_div a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+.card_button_div .link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+.card_button_div a:hover{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-width: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+.card_button_div .link:hover{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-width: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+.About_show_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    overflow-y: scroll;
+}
+.About_show_div::-webkit-scrollbar{
+    width: 2px;
+}
+.About_show_div h1{
+    font-size: 30px;
+    color: aliceblue;
+    border-bottom: 1px solid white;
+    font-family: 'Dosis', sans-serif;
+}
+.About_show_div p{
+    font-size: 20px;
+    color: aliceblue;
+    width: 50%;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 150px;
+    /* font-family: 'Oswald', sans-serif; */
+}
+@media (max-width:600px) {
+    .About_show_div{
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        background-color: rgb(41, 41, 41);
+    }
+    .About_show_div p{
+        font-size: 20px;
+        color: aliceblue;
+        width: 70%;
+        font-family: 'Dosis', sans-serif;
+        /* font-family: 'Oswald', sans-serif; */
+    }
+}
+.Project_detail_show_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    
+}
+.Project_detail_div{
+    display: flex;
+    flex-direction: row;
+    justify-content:top;
+    align-items: center;
+    gap: 110px;
+}
+.Project_detail_img{
+    width: 400px;
+    height: 400px;
+}
+.Project_detail_info{
+    display: flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items: left;
+
+}
+.Project_detail_name{
+    font-size: 30px;
+    color: aliceblue;
+    border-bottom: 1px solid white;
+}
+.Project_detail_intro{
+    font-size: 20px;
+    color: aliceblue;
+    max-width: 400px;
+}
+.Project_detail_btn_div{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: left;
+    gap: 20px;
+}
+.Project_detail_btn_div a{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0);
+}
+.Project_detail_btn_div .link{
+    text-decoration: none;
+    color: rgb(49, 159, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0);
+}
+
+.Project_detail_btn_div a:hover{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0.232);
+}
+.Project_detail_btn_div .link:hover{
+    text-decoration: none;
+    color: rgb(54, 161, 255);
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(54, 161, 255, 0.238);
+
+}
+
+@media (max-width:600px) {
+    .Project_detail_show_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 85%;
+        background-color: rgb(41, 41, 41);
+        overflow: hidden;
+        overflow-y: scroll;
+        
+    }
+    .Project_detail_show_div::-webkit-scrollbar{
+        width: 6px;
+    }
+    .Project_detail_show_div::-webkit-scrollbar-thumb{
+        background-color: rgb(15, 15, 15);
+        border-radius: 30px;
+    }
+    .Project_detail_show_div::-webkit-scrollbar-track{
+        background-color: rgb(54, 54, 54);
+        border-radius: 30px;
+    }
+    .Project_detail_div{
+        display: flex;
+        flex-direction: column;
+        justify-content:top;
+        align-items: center;
+        gap: 10px;
+    }
+    .Project_detail_img{
+        width: 200px;
+        height: 200px;
+    }
+    .Project_detail_info{
+        display: flex;
+        flex-direction: column;
+        justify-content:top;
+        align-items: left;
+    
+    }
+    .Project_detail_name{
+        font-size: 30px;
+        color: aliceblue;
+        border-bottom: 1px solid white;
+    }
+    .Project_detail_intro{
+        font-size: 20px;
+        color: aliceblue;
+        max-width: 400px;
+    }
+    .Project_detail_btn_div{
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: left;
+        gap: 20px;
+    }
+    .Project_detail_btn_div a{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0);
+    }
+    .Project_detail_btn_div .link{
+        text-decoration: none;
+        color: rgb(49, 159, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0);
+    }
+    
+    .Project_detail_btn_div a:hover{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0.232);
+    }
+    .Project_detail_btn_div .link:hover{
+        text-decoration: none;
+        color: rgb(54, 161, 255);
+        font-size: 20px;
+        transition: 0.3s;
+        background-color: rgba(54, 161, 255, 0.238);
+    
+    }
+}
+
+/*# sourceMappingURL=index.css.map*/

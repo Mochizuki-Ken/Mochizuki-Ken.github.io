@@ -8,9 +8,10 @@ export default function Projects() {
     const [projects,setProjects]=React.useState([])//[{project_name:'LSS_App',link_url:'https://metassi.github.io/Lss.vip.github.io/login_page.html',intro:'A web very very very very good',img:'https://metassi.github.io/Lss.vip.github.io/lss-logo.png'}]
     const {search,setsearch}=React.useContext(SearchContext)
     React.useEffect(()=>{
-        axios.get('https://metassi.github.io/JasonKen_intro.github.io/projects.json').then((reponse)=>{
+        axios.get('https://mochizuki-ken.github.io/Projects.json').then((reponse)=>{
             // setProjects(reponse.data)
             // console.log(reponse.data)
+            if(reponse.data==null)
             if (search!=='all'){
                 setProjects([])
                 var a=[];
@@ -21,7 +22,7 @@ export default function Projects() {
                 });
                 setProjects(a)
             }else{
-                setProjects(reponse.data)
+                setProjects(reponse.data||[])
             }
             
         })
@@ -31,6 +32,7 @@ export default function Projects() {
     <div className='Projects_main_div'>
         <Left_bar/>
         <div className='Projects_show_div'>
+            {projects.length===0&&<label className='empty'>NO PROJECTS</label>}
             {
                 projects.map((project,index)=>{
                     return(
@@ -38,6 +40,7 @@ export default function Projects() {
                     )
                 })
             }
+            
         </div>
     </div>
   )

@@ -8,7 +8,7 @@ export default function Project_detail() {
     const {pid}=useParams()
     const [projects,setProjects]=React.useState([])//[{project_name:'LSS_App',link_url:'https://metassi.github.io/Lss.vip.github.io/login_page.html',intro:'A web very very very very good',img:'https://metassi.github.io/Lss.vip.github.io/lss-logo.png'}]
     React.useEffect(()=>{
-        axios.get('https://metassi.github.io/JasonKen_intro.github.io/projects.json').then((reponse)=>{
+        axios.get('https://mochizuki-ken.github.io/Projects.json').then((reponse)=>{
             (reponse.data).forEach(element => {
                 if (element.project_name===pid){
                     setProjects([element])

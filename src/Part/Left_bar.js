@@ -16,7 +16,7 @@ export default function Left_bar() {
   return (
     <div className='Projects_navbar_div'>
         <div className='Projects_navbar_title_div'>
-          <label className='Projects_navbar_title'>JASONKEN</label>
+          <label className='Projects_navbar_title'>MOCHIZUKI KEN</label>
           <div className='Projects_navbar_search_div'>
             <input placeholder='Search' onChange={(e)=>{setstext(e.target.value)}} />
             <button onClick={Search}>Search</button>

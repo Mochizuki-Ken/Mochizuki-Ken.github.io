@@ -3,7 +3,8 @@
   {
     "project_name":"Christmas Card",
     "link_url":"https://christmas--card.web.app",
-    "short_intro":"You can custom your Christmas Card and send it to your friend. Built by React.js and host by Firebase.",
+    "short_intro":"custom your Christmas Card and send it to your friend. ",
+    "intro":"You can custom your Christmas Card and send it to your friend. Built by React.js and host by Firebase.",
     "img":"https://mochizuki-ken.github.io/Images/Card.png"
   }
 ]
